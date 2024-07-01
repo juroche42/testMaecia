@@ -8,6 +8,11 @@ use Illuminate\Notifications\Notifiable;
 use OpenApi\Annotations as OA;
 
 /**
+ * @OA\Info(
+ *     title="My First API",
+ *     version="0.1"
+ * )
+ * 
  * @OA\Schema(
  *     schema="User",
  *     required={"email", "nom", "prenom", "poste", "status"},

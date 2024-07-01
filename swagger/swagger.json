@@ -6,6 +6,21 @@
     },
     "components": {
         "schemas": {
+            "Service": {
+                "required": [
+                    "name"
+                ],
+                "properties": {
+                    "id": {
+                        "type": "integer",
+                        "format": "int64"
+                    },
+                    "name": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            },
             "User": {
                 "required": [
                     "email",
