@@ -3,12 +3,9 @@
 use OpenApi\Annotations as OA;
 
 /**
- * @OA\Info(
- *     title="Laravel API",
- *     version="1.0.0"
- * )
+ * @OA\Info(title="My first API", version="1.0.0")
  * @OA\Server(
- *    url="http://localhost:8000",
- *    description="Development server"
+ *  url="http://127.0.0.1:8000",
+ *  description="Localhost server"
  * )
- * **/
+ */

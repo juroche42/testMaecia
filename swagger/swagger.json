@@ -1,13 +1,43 @@
 {
     "openapi": "3.0.0",
     "info": {
-        "title": "Laravel API",
-        "version": "1.0.0"
+        "title": "My First API",
+        "version": "0.1"
     },
-    "servers": [
-        {
-            "url": "http://localhost:8000",
-            "description": "Development server"
+    "components": {
+        "schemas": {
+            "User": {
+                "required": [
+                    "email",
+                    "nom",
+                    "prenom",
+                    "poste",
+                    "status"
+                ],
+                "properties": {
+                    "id": {
+                        "type": "integer",
+                        "format": "int64"
+                    },
+                    "email": {
+                        "type": "string"
+                    },
+                    "nom": {
+                        "type": "string"
+                    },
+                    "prenom": {
+                        "type": "string"
+                    },
+                    "poste": {
+                        "type": "string"
+                    },
+                    "status": {
+                        "type": "integer",
+                        "format": "int32"
+                    }
+                },
+                "type": "object"
+            }
         }
-    ]
+    }
 }
