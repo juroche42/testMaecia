@@ -18,7 +18,6 @@ return new class extends Migration
             $table->string('nom');
             $table->string('poste');
             $table->int('status')->default(0);
-            $table->rememberToken();
             $table->timestamps();
         });
     }
