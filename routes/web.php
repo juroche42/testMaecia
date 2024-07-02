@@ -8,3 +8,4 @@ Route::get('/', function () {
 });
 Route::get('/users', [UserController::class, 'index']);
 Route::get('/user/{userId}', [UserController::class, 'user']);
+Route::put('/api/user/{userId}', [UserController::class, 'update']);
