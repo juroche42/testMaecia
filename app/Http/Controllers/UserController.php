@@ -30,4 +30,13 @@ class UserController extends Controller
             ->get();
         return response()->json($users);
     }
+
+
+    public function user(int $userId)
+    {
+        $user = User::with('services:name')
+            ->select(['id','prenom', 'nom', 'email', 'poste', 'status'])
+            ->find($userId);
+        return response()->json($user);
+    }
 }
