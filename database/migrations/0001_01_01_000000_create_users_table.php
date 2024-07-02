@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('prenom');
             $table->string('nom');
             $table->string('poste');
-            $table->int('status')->default(0);
+            $table->integer('status')->default(0);
             $table->timestamps();
         });
     }
